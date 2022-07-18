@@ -7,17 +7,18 @@
 <h2>Departments</h2>
 
 <p>
-    <a class="btn-sm btn-primary" asp-action="Create">Create New Department</a>
+    <a class="btn btn-primary" asp-action="Create">Create New Department</a>
 </p>
 <table class="table table-hover table-striped">
     <thead>
-        <tr class="warning">
+        <tr class="bg-info" style="color: #fff;">
             <th>
                 @Html.DisplayNameFor(model => model.Id)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
