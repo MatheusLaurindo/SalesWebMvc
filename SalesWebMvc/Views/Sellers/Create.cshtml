@@ -3,14 +3,14 @@
     ViewData["Title"] = "Create";
 }
 
-<h2>@ViewData["title"]</h2>
+<h1 class="">@ViewData["title"]</h1>
 
 <h4>New seller</h4>
 
 <hr />
 
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
         <form asp-action="Create">
             <div class="form-group">
                 <label asp-for="Seller.Name" class="control-label">Name:</label>
@@ -39,5 +39,8 @@
                 <a asp-action="Index">Back to List</a>
             </div>
         </form>
+    </div>
+    <div class="col-md-6" style="display: flex; justify-content: center; align-items: center;">
+        <img src="~/images/Humaaans - Wireframe.png" class="img-responsive" />
     </div>
 </div>
